@@ -21,127 +21,129 @@
       </template>
       <v-divider color="accent"></v-divider>
 
-      <v-list dense>
-        <template v-for="(item, index) in navigationItems">
-          <v-divider
-            v-if="item.divider"
-            :key="index"
-            color="accent"
-            inset
-          ></v-divider>
-          <v-list-item v-else :key="index" color="primary" dark>
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
+      <template v-for="(item, index) in externalLinkItems">
+        <v-divider
+          v-if="item.divider"
+          :key="index"
+          color="accent"
+          inset
+        ></v-divider>
+        <v-list-item
+          v-else
+          :key="index"
+          color="primary"
+          dark
+          @click="goToUrl(item.url)"
+        >
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
 
-            <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </template>
-      </v-list>
-
-      <template v-slot:append>
-        <v-divider color="accent"></v-divider>
-
-        <v-list dense>
-          <template v-for="(item, index) in externalLinkItems">
-            <v-divider
-              v-if="item.divider"
-              :key="index"
-              color="accent"
-              inset
-            ></v-divider>
-            <v-list-item
-              v-else
-              :key="index"
-              color="primary"
-              dark
-              @click="goToUrl(item.url)"
-            >
-              <v-list-item-icon>
-                <img
-                  v-if="item.icon === 'linkedin'"
-                  src="./assets/linkedin.png"
-                />
-                <v-icon v-else>{{ item.icon }}</v-icon>
-              </v-list-item-icon>
-
-              <v-list-item-content>
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </template>
-        </v-list>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </template>
     </v-navigation-drawer>
 
+    <v-app-bar flat app dense color="secondary">
+      <v-tabs center-active dark v-model="selectedTab">
+        <v-tab>Research</v-tab>
+        <v-tab>Art</v-tab>
+        <v-tab>Poetry</v-tab>
+        <v-tab>Music</v-tab>
+        <v-tab>Contact</v-tab>
+      </v-tabs>
+    </v-app-bar>
+
     <v-main>
-      <HelloWorld />
+      <v-container fluid style="max-width: 1280px">
+        <v-row class="text-left">
+          <v-col cols="12">
+          <v-tabs-items v-model="selectedTab">
+            <v-tab-item><ResearchPanel /></v-tab-item>
+            <v-tab-item><ArtPanel /></v-tab-item>
+            <v-tab-item><PoetryPanel /></v-tab-item>
+            <v-tab-item><MusicPanel /></v-tab-item>
+            <v-tab-item><ContactPanel /></v-tab-item>
+          </v-tabs-items>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import ArtPanel from "./components/ArtPanel";
+import ContactPanel from "./components/ContactPanel";
+import MusicPanel from "./components/MusicPanel";
+import PoetryPanel from "./components/PoetryPanel";
+import ResearchPanel from "./components/ResearchPanel";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    ArtPanel,
+    ContactPanel,
+    MusicPanel,
+    PoetryPanel,
+    ResearchPanel,
   },
 
   metaInfo: {
     title: "Home Page",
     titleTemplate: "%s - Adahlia Lux",
   },
+
   data: () => ({
-    navigationItems: [
-      {
-        icon: "engineering",
-        title: "Research interests",
-      },
-      { divider: true },
-      {
-        icon: "newspaper",
-        title: "Publications",
-      },
-      { divider: true },
-      {
-        icon: "groups",
-        title: "Demonstrating",
-      },
-      { divider: true },
-      {
-        icon: "co_present",
-        title: "Slides",
-      },
-      { divider: true },
-      {
-        icon: "portrait",
-        title: "Background",
-      },
-      { divider: true },
-      {
-        icon: "outgoing_mail",
-        title: "Contact me",
-      },
-    ],
     externalLinkItems: [
       {
-        icon: "palette",
-        title: "Personal and Art",
-        url: "https://allmylinks.com/gottalux",
-      },
-      { divider: true },
-      {
-        icon: "linkedin",
+        icon: "work",
         title: "LinkedIn",
         url: "https://www.linkedin.com/in/adahlia-lux-27121075/",
       },
+      { divider: true },
+      {
+        icon: "smart_display",
+        title: "My story on Youtube",
+        url: "https://www.youtube.com/watch?v=qEXP7SxQuTs",
+      },
+      { divider: true },
+      {
+        icon: "brush",
+        title: "My art on Instagram",
+        url: "https://www.instagram.com/gotta.lux/",
+      },
+      { divider: true },
+      {
+        icon: "coffee",
+        title: "Buy me a coffee",
+        url: "https://ko-fi.com/gottalux",
+      },
+      { divider: true },
+      {
+        icon: "collections",
+        title: "Buy my prints",
+        url: "https://www.etsy.com/uk/shop/GottaLux",
+      },
+      { divider: true },
+      {
+        icon: "shopping_cart",
+        title: "Buy my merch",
+        url: "https://www.redbubble.com/people/adahlia/shop?asc=u",
+      },
+      { divider: true },
+      {
+        icon: "volunteer_activism",
+        title: "Fundraiser",
+        url: "https://gofund.me/d3c36340",
+      },
     ],
+    selectedTab: 0,
   }),
+
   methods: {
     goToUrl(url) {
       window.open(url, "_blank");
@@ -149,3 +151,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+.external-avatar {
+  border-radius: 10%;
+  border-color: #fcfcfc;
+  border-style: solid;
+  border: 3px;
+}
+</style>

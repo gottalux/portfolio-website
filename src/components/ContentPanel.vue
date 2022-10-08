@@ -1,7 +1,7 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col class="mb-4">
+  <v-container fluid style="max-width: 1280px">
+    <v-row class="text-left">
+      <v-col class="my-4">
         <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
 
         <p class="subheading font-weight-regular">
