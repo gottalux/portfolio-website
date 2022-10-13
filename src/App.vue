@@ -9,7 +9,9 @@
         </v-list-item>
         <v-list-item three-line color="primary" dark>
           <v-list-item-content>
-            <v-list-item-title>Adahlia S. Lux</v-list-item-title>
+            <v-list-item-title style="font-size: 1.25rem"
+              >Adahlia S. Lux</v-list-item-title
+            >
             <v-list-item-subtitle class="primary--text"
               >Final year PhD student, supervised by
               <a href="http://www.cs.bham.ac.uk/~axk/" target="_blank"
@@ -48,6 +50,8 @@
 
     <v-app-bar flat app dense color="secondary">
       <v-tabs center-active dark v-model="selectedTab">
+        <v-spacer />
+        <v-tab>About Me</v-tab>
         <v-tab>Research</v-tab>
         <v-tab>Art</v-tab>
         <v-tab>Poetry</v-tab>
@@ -57,24 +61,20 @@
     </v-app-bar>
 
     <v-main>
-      <v-container fluid style="max-width: 1280px">
-        <v-row class="text-left">
-          <v-col cols="12">
-          <v-tabs-items v-model="selectedTab">
-            <v-tab-item><ResearchPanel /></v-tab-item>
-            <v-tab-item><ArtPanel /></v-tab-item>
-            <v-tab-item><PoetryPanel /></v-tab-item>
-            <v-tab-item><MusicPanel /></v-tab-item>
-            <v-tab-item><ContactPanel /></v-tab-item>
-          </v-tabs-items>
-          </v-col>
-        </v-row>
-      </v-container>
+      <v-tabs-items v-model="selectedTab">
+        <v-tab-item><AboutMePanel /></v-tab-item>
+        <v-tab-item><ResearchPanel /></v-tab-item>
+        <v-tab-item><ArtPanel /></v-tab-item>
+        <v-tab-item><PoetryPanel /></v-tab-item>
+        <v-tab-item><MusicPanel /></v-tab-item>
+        <v-tab-item><ContactPanel /></v-tab-item>
+      </v-tabs-items>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import AboutMePanel from "./components/AboutMePanel";
 import ArtPanel from "./components/ArtPanel";
 import ContactPanel from "./components/ContactPanel";
 import MusicPanel from "./components/MusicPanel";
@@ -85,6 +85,7 @@ export default {
   name: "App",
 
   components: {
+    AboutMePanel,
     ArtPanel,
     ContactPanel,
     MusicPanel,
@@ -151,7 +152,17 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss">
+@import "./scss/main.scss";
+@font-face {
+  font-family: "Questrial-Regular";
+
+  src: local("Questrial-Regular"),
+    url("./scss/Questrial-Regular.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .external-avatar {
   border-radius: 10%;
   border-color: #fcfcfc;
