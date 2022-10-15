@@ -1,5 +1,7 @@
+@import 'variables';
+
 .grey-darken-1--text {
-  color: #757575 !important;
+  color: $adahlia-grey !important;
 }
 
 .italic {
@@ -7,9 +9,14 @@
 }
 
 .grey-darken-1--link {
-  color: #757575 !important;
+  color: $adahlia-grey !important;
 }
 
 .grey-darken-1--link:hover {
-  color: #D93908 !important;
+  color: $adahlia-red !important;
+}
+
+
+.v-window__prev, .v-window__next {
+  background-color: $adahlia-red;
 }

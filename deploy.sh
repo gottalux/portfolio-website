@@ -17,7 +17,7 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:gottalux/gottalux.github.io.git main
+git push -f https://github.com/gottalux/portfolio-website.git main
 
 
 cd -
