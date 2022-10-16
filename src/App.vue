@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app right permanent color="secondary" dark>
+    <v-navigation-drawer app right color="secondary" dark>
       <template v-slot:prepend>
         <v-list-item two-line>
           <v-list-item-avatar size="224">

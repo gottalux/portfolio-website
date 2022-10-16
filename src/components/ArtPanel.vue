@@ -8,15 +8,17 @@
           next-icon="arrow_forward"
           prev-icon="arrow_back"
           :height="viewPortHeight"
-          class="art-carousel"
         >
           <v-carousel-item
             v-for="(item, i) in art"
             :key="i"
-            :src="item.picture"
-            contain
-            style="background-color: #ffeeee"
+            style="background-color: #ffeeee; display: flex"
           >
+            <v-img :src="item.picture" contain :height="viewPortHeight" />
+
+            <div class="art-description">
+              <p>{{ item.title }}</p>
+            </div>
           </v-carousel-item>
         </v-carousel>
       </v-col>
@@ -33,45 +35,59 @@ export default {
       art: [
         {
           picture: require("../assets/aChaoticPresentation.png"),
+          title: "A Chaotic Presentation",
         },
         {
           picture: require("../assets/backFromTheDead.png"),
+          title: "Back From The Dead",
         },
         {
           picture: require("../assets/dackel.png"),
+          title: "Dackel",
         },
         {
           picture: require("../assets/dogAtTheEndOfTheRainbow.png"),
+          title: "Dog at the End of the Rainbow",
         },
         {
           picture: require("../assets/dontEatMe.png"),
+          title: "Don't Eat Me",
         },
         {
           picture: require("../assets/dumpling.png"),
+          title: "Dumpling",
         },
         {
           picture: require("../assets/fingersAndOcToes.png"),
+          title: "Fingers and Oc-Toes",
         },
         {
           picture: require("../assets/forceOfNature.png"),
+          title: "Force of Nature",
         },
         {
           picture: require("../assets/frosty.png"),
+          title: "Frosty",
         },
         {
           picture: require("../assets/mightyPirate.png"),
+          title: "Mighty Pirate",
         },
         {
           picture: require("../assets/myUnbrokenHeart.png"),
+          title: "My Unbroken Heart",
         },
         {
           picture: require("../assets/pigAtTheLavaPool.png"),
+          title: "Pig at the Lava Pool",
         },
         {
           picture: require("../assets/spiltMilkDay.png"),
+          title: "Spilt Milk (Day)",
         },
         {
           picture: require("../assets/spiltMilkNight.png"),
+          title: "Spilt Milk (Night)",
         },
       ],
       windowHeight: window.innerHeight,
@@ -116,6 +132,17 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.art-carousel {
+@import "../scss/main.scss";
+
+.art-description {
+  background-color: black;
+  color: $adahlia-white;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  opacity: 0.75;
+  position: absolute;
+  transform: translateY(-48px);
+  width: 100%;
 }
 </style>
