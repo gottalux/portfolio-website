@@ -12,7 +12,7 @@
           <v-carousel-item
             v-for="(item, i) in art"
             :key="i"
-            style="background-color: #ffeeee; display: flex"
+            style="background-color: #ffeeee"
           >
             <v-img :src="item.picture" contain :height="viewPortHeight" />
 
