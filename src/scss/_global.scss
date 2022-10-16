@@ -1,0 +1,25 @@
+@import 'variables';
+
+.grey-darken-1--text {
+  color: $adahlia-grey !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.grey-darken-1--link {
+  color: $adahlia-grey !important;
+}
+
+.grey-darken-1--link:hover {
+  color: $adahlia-red !important;
+}
+
+.v-window__prev, .v-window__next {
+  background-color: $adahlia-red;
+}
+
+.theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--dark.v-tabs > .v-tabs-bar .v-tab--disabled {
+  color: #ffe3a5;
+}
