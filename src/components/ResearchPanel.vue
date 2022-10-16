@@ -77,37 +77,47 @@
           </template>
         </v-list>
         <h2 class="secondary--text my-3">Slides</h2>
-        <v-list dense>
-          <template v-for="(item, index) in slides">
-            <v-list-item :key="index" dark class="mb-4">
-              <v-list-item-content>
-                <span class="grey-darken-1--text">
-                  <strong> {{ item.title }} </strong>
-                </span>
-                <span v-if="item.url" class="grey-darken-1--text">
-                  <strong>
-                    (<a
-                      :href="item.url"
-                      target="_blank"
-                      class="grey-darken-1--link italic"
-                    >
-                      {{ item.urlText }}
-                    </a>
-                    )
-                  </strong>
-                </span>
-                <span class="grey-darken-1--text">
-                  {{ item.date }}
-                </span>
-              </v-list-item-content>
-              <a :href="item.file" target="_blank">
-                <v-list-item-avatar tile height="206px" width="275px">
-                  <img :src="item.thumbnail" />
-                </v-list-item-avatar>
-              </a>
-            </v-list-item>
-          </template>
-        </v-list>
+        <v-row v-for="(item, index) in slides" :key="index">
+          <v-col
+            cols="12"
+            md="6"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            "
+          >
+            <span class="grey-darken-1--text">
+              <strong> {{ item.title }} </strong>
+            </span>
+            <span v-if="item.url" class="grey-darken-1--text">
+              <strong>
+                (<a
+                  :href="item.url"
+                  target="_blank"
+                  class="grey-darken-1--link italic"
+                >
+                  {{ item.urlText }}
+                </a>
+                )
+              </strong>
+              <br />
+            </span>
+            <span class="grey-darken-1--text">
+              {{ item.date }}
+            </span>
+          </v-col>
+          <v-col :key="index" cols="12" md="6">
+            <a :href="item.file" target="_blank">
+              <v-img
+                :src="item.thumbnail"
+                height="206px"
+                width="275px"
+                style="border: black 1px solid"
+              />
+            </a>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>

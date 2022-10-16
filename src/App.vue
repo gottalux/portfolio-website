@@ -1,6 +1,12 @@
 <template>
   <v-app>
-    <v-navigation-drawer app right color="secondary" dark>
+    <v-navigation-drawer
+      app
+      right
+      color="secondary"
+      dark
+      v-model="showNavDrawer"
+    >
       <template v-slot:prepend>
         <v-list-item two-line>
           <v-list-item-avatar size="224">
@@ -49,13 +55,18 @@
     </v-navigation-drawer>
 
     <v-app-bar flat app dense color="secondary">
-      <v-tabs center-active dark v-model="selectedTab">
-        <v-spacer />
+      <v-app-bar-nav-icon
+        v-if="$vuetify.breakpoint.mobile"
+        @click="showNavDrawer = !showNavDrawer"
+      >
+        <v-icon color="primary"> menu </v-icon>
+      </v-app-bar-nav-icon>
+      <v-tabs center-active dark right v-model="selectedTab">
         <v-tab>About Me</v-tab>
         <v-tab>Research</v-tab>
         <v-tab>Art</v-tab>
-        <v-tab>Poetry</v-tab>
-        <v-tab>Music</v-tab>
+        <!-- <v-tab>Poetry</v-tab> -->
+        <!-- <v-tab>Music</v-tab> -->
         <v-tab>Contact</v-tab>
       </v-tabs>
     </v-app-bar>
@@ -65,8 +76,8 @@
         <v-tab-item><AboutMePanel /></v-tab-item>
         <v-tab-item><ResearchPanel /></v-tab-item>
         <v-tab-item><ArtPanel /></v-tab-item>
-        <v-tab-item><PoetryPanel /></v-tab-item>
-        <v-tab-item><MusicPanel /></v-tab-item>
+        <!-- <v-tab-item><PoetryPanel /></v-tab-item> -->
+        <!-- <v-tab-item><MusicPanel /></v-tab-item> -->
         <v-tab-item><ContactPanel /></v-tab-item>
       </v-tabs-items>
     </v-main>
@@ -77,8 +88,8 @@
 import AboutMePanel from "./components/AboutMePanel";
 import ArtPanel from "./components/ArtPanel";
 import ContactPanel from "./components/ContactPanel";
-import MusicPanel from "./components/MusicPanel";
-import PoetryPanel from "./components/PoetryPanel";
+// import MusicPanel from "./components/MusicPanel";
+// import PoetryPanel from "./components/PoetryPanel";
 import ResearchPanel from "./components/ResearchPanel";
 
 export default {
@@ -88,8 +99,8 @@ export default {
     AboutMePanel,
     ArtPanel,
     ContactPanel,
-    MusicPanel,
-    PoetryPanel,
+    // MusicPanel,
+    // PoetryPanel,
     ResearchPanel,
   },
 
@@ -143,6 +154,7 @@ export default {
       },
     ],
     selectedTab: 0,
+    showNavDrawer: true,
   }),
 
   methods: {
