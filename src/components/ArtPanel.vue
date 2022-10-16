@@ -1,14 +1,13 @@
 <template>
-  <v-container fluid style="max-width: 1280px">
+  <v-container fluid>
     <v-row class="text-left">
-      <v-col cols="12">
-        <h1 class="secondary--text my-3">My Art</h1>
+      <v-col cols="12" class="pa-0">
         <v-carousel
           cycle
-          height="720"
           hide-delimiters
           next-icon="arrow_forward"
           prev-icon="arrow_back"
+          :height="viewPortHeight"
           class="art-carousel"
         >
           <v-carousel-item
@@ -48,6 +47,9 @@ export default {
           picture: require("../assets/dontEatMe.png"),
         },
         {
+          picture: require("../assets/dumpling.png"),
+        },
+        {
           picture: require("../assets/fingersAndOcToes.png"),
         },
         {
@@ -72,10 +74,20 @@ export default {
           picture: require("../assets/spiltMilkNight.png"),
         },
       ],
+      windowHeight: window.innerHeight,
     };
+  },
+  computed: {
+    viewPortHeight() {
+      // The tabs at the top are 48 pixels in height
+      return this.windowHeight - 48;
+    },
   },
   created() {
     Vue.set(this, "art", this.randomiseArrayOrder(this.art));
+    window.addEventListener("resize", () => {
+      this.windowHeight = window.innerHeight;
+    });
   },
   methods: {
     goToUrl(url) {
@@ -105,11 +117,5 @@ export default {
 </script>
 <style lang="scss" scoped>
 .art-carousel {
-  height: 720px;
-  border: #d93908;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.25em;
-  box-shadow: 0px 0px 5px #d93908;
 }
 </style>
