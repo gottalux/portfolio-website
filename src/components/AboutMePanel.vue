@@ -18,9 +18,8 @@
           longer than anticipated due to COVID and complications. I'm nearly
           back from medical leave now, and I can't wait to wrap up my thesis and
           take my next bold strides into the future. <br /><br />
-          I am very excited by the notion of applying my data science skills to
-          gender-affirming healthcare data and I am seeking projects in this
-          field.
+          I am interested in exploring how artificial intelligence and related
+          technologies marginalise queer and trans people and our identities.
         </p>
       </v-col>
     </v-row>
