@@ -119,8 +119,14 @@ export default {
       { divider: true },
       {
         icon: "smart_display",
-        title: "My story on Youtube",
+        title: "My story on YouTube",
         url: "https://www.youtube.com/watch?v=qEXP7SxQuTs",
+      },
+      { divider: true },
+      {
+        icon: "campaign",
+        title: "My poetry on YouTube",
+        url: "https://www.youtube.com/playlist?list=PL9uiJIH1jQIX_-Ux5SZEAIcAtNxV9xLol",
       },
       { divider: true },
       {
