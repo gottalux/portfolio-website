@@ -42,6 +42,10 @@ export default {
           title: "Back From The Dead",
         },
         {
+          picture: require("../assets/burnedOutGlow.jpg"),
+          title: "Burned Out Glow",
+        },
+        {
           picture: require("../assets/dackel.png"),
           title: "Dackel",
         },
