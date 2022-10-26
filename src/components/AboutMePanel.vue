@@ -3,8 +3,8 @@
     <v-row class="text-left">
       <v-col cols="12">
         <iframe
-          width="676"
-          height="380"
+          width="100%"
+          height="393"
           src="https://www.youtube.com/embed/_WCmhutYP5I"
           title="YouTube video player"
           frameborder="0"
