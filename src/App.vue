@@ -119,7 +119,7 @@ export default {
       { divider: true },
       {
         icon: "smart_display",
-        title: "My story on YouTube",
+        title: "My surgery story",
         url: "https://www.youtube.com/watch?v=qEXP7SxQuTs",
       },
       { divider: true },
