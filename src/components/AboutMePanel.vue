@@ -12,10 +12,10 @@
           allowfullscreen
         ></iframe>
         <h3 class="secondary--text mt-3 mb-2">
-          My Academic Journey (video transcript)
+          My academic journey (video transcript)
         </h3>
         <p class="grey-darken-1--text" style="text-align: justify">
-          <strong>As a girl</strong>, my dream was to sing, and being told I
+          <strong>As a girl, my dream was to sing</strong>, and being told I
           couldn't do that authentically, just made me sing my heart out. In
           hiding, I recorded five albums. I taught myself how to record and
           produce my own music. And on this quest to find my voice, I became
@@ -57,23 +57,30 @@
           physical inspection. This is not true.
           <br /><br />
 
-          In reality, gender is a spectrum. Non-binary people exist. In machine
-          learning, we would call this simple rule a poor binary classifier. A
-          mind that was trained from an early age with the binary classifier
-          will naturally have difficulties grasping this fact: this is what we
-          would expect, binary classifiers perform poorly on data that does not
-          have discrete classes. For transgender people, who are incorrectly
-          classified at birth by society's poor binary classifier, this is a big
-          problem; but the poor binary classifier holds all of us back from
-          truly understanding our identities, until we acknowledge it for what
-          it is.
+          In reality, gender is (better thought of as) a spectrum. Non-binary
+          people exist. In machine learning, we would call this simple rule a
+          poor binary classifier. A mind that was trained from an early age with
+          the binary classifier will naturally have difficulties grasping this
+          fact: this is what we would expect, binary classifiers perform poorly
+          on data that does not have discrete classes. For transgender people,
+          who are incorrectly classified at birth by society's poor binary
+          classifier, this is a big problem; but the poor binary classifier
+          holds all of us back from truly understanding our identities, until we
+          acknowledge it for what it is.
           <br /><br />
 
-          As someone who was incorrectly classified at birth, poor binary
-          classifiers are something darkly close to my heart. As I complete my
-          PhD thesis, I have some very exciting ideas developing for future
-          research topics in this area. I'm looking forward to pursuing these
-          ideas in the near future and I welcome discussions about this.
+          As someone who was incorrectly classified at birth, this binary
+          classifier is darkly close to my heart. As I complete my PhD thesis, I
+          have some very exciting ideas developing for future research topics in
+          this area. I'm looking forward to pursuing these ideas in the near
+          future and I welcome discussions about this.
+        </p>
+        <h3 class="secondary--text mt-3 mb-2">My hobbies</h3>
+        <p class="grey-darken-1--text" style="text-align: justify">
+          I enjoying speaking, writing and improving my German. I've recently
+          started writing my poetry in German, too. When I need to relax, I love
+          to make digital art. There are some of my artworks in my website art
+          gallery.
         </p>
       </v-col>
     </v-row>
