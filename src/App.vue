@@ -111,53 +111,53 @@ export default {
 
   data: () => ({
     externalLinkItems: [
-      {
-        icon: "work",
-        title: "LinkedIn",
-        url: "https://www.linkedin.com/in/adahlia-lux-27121075/",
-      },
-      { divider: true },
-      {
-        icon: "emergency",
-        title: "My surgery story",
-        url: "https://www.youtube.com/watch?v=qEXP7SxQuTs",
-      },
-      { divider: true },
+      // {
+      //   icon: "work",
+      //   title: "LinkedIn",
+      //   url: "https://www.linkedin.com/in/adahlia-lux-27121075/",
+      // },
+      // { divider: true },
+      // {
+      //   icon: "emergency",
+      //   title: "My surgery story",
+      //   url: "https://www.youtube.com/watch?v=qEXP7SxQuTs",
+      // },
+      // { divider: true },
       {
         icon: "smart_display",
-        title: "My German poetry",
-        url: "https://www.youtube.com/playlist?list=PL9uiJIH1jQIX_-Ux5SZEAIcAtNxV9xLol",
+        title: "My music",
+        url: "https://www.youtube.com/@adahlialux/featured",
       },
-      { divider: true },
-      {
-        icon: "brush",
-        title: "My art on Instagram",
-        url: "https://www.instagram.com/gotta.lux/",
-      },
+      // { divider: true },
+      // {
+      //   icon: "brush",
+      //   title: "My art on Instagram",
+      //   url: "https://www.instagram.com/gotta.lux/",
+      // },
       { divider: true },
       {
         icon: "coffee",
         title: "Buy me a coffee",
         url: "https://ko-fi.com/gottalux",
       },
-      { divider: true },
-      {
-        icon: "collections",
-        title: "Buy my prints",
-        url: "https://www.etsy.com/uk/shop/GottaLux",
-      },
-      { divider: true },
-      {
-        icon: "shopping_cart",
-        title: "Buy my merch",
-        url: "https://www.redbubble.com/people/adahlia/shop?asc=u",
-      },
-      { divider: true },
-      {
-        icon: "volunteer_activism",
-        title: "Fundraiser",
-        url: "https://gofund.me/d3c36340",
-      },
+      // { divider: true },
+      // {
+      //   icon: "collections",
+      //   title: "Buy my prints",
+      //   url: "https://www.etsy.com/uk/shop/GottaLux",
+      // },
+      // { divider: true },
+      // {
+      //   icon: "shopping_cart",
+      //   title: "Buy my merch",
+      //   url: "https://www.redbubble.com/people/adahlia/shop?asc=u",
+      // },
+      // { divider: true },
+      // {
+      //   icon: "volunteer_activism",
+      //   title: "Fundraiser",
+      //   url: "https://gofund.me/d3c36340",
+      // },
     ],
     selectedTab: 0,
     showNavDrawer: true,
