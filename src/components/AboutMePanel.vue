@@ -26,13 +26,11 @@
           can constrain and inform the problem by geometric observations about
           the distorted mixtures. I published two papers, and as my thesis
           neared completion, the time had come for me to complete my research as
-          me. I came out as a trans woman in 2019, and since then, I have
-          experienced monstrous treatment from all corners of our society.
+          me. I came out as a trans woman in 2019.
           <br /><br />
 
-          Undeterred and determined, I have recently submitted my PhD thesis. I
-          am excited to find out what the world has in store for the next
-          chapter of my life.
+          I have recently submitted my PhD thesis. I am excited to find out what
+          the world has in store for the next chapter of my life.
         </p>
         <h3 class="secondary--text mt-3 mb-2">My hobbies</h3>
         <p class="grey-darken-1--text" style="text-align: justify">
