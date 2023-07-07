@@ -4,8 +4,8 @@
       <v-col cols="12">
         <h3 class="secondary--text mt-3 mb-2">My story</h3>
         <p class="grey-darken-1--text" style="text-align: justify">
-          <strong>I have been on a lifelong quest to rediscover my voice</strong>
-          , while cultivating a fascination with sound and signals.
+          <strong>I have been on a lifelong quest to rediscover my voice</strong>,
+          while cultivating a fascination with sound and signals.
           <br /><br />
 
           Separating voices from mixtures is a problem close to the hearts of
