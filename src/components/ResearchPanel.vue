@@ -6,8 +6,7 @@
         <p class="grey-darken-1--text">
           Source separation, Independent Component Analysis (ICA), declipping,
           audio inpainting, convex optimisation, probabilistic modelling,
-          statistical signal processing, trans and queer marginalisation in
-          technology.
+          statistical signal processing.
         </p>
         <h2 class="secondary--text my-3">Publications</h2>
         <v-list>
