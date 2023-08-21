@@ -134,12 +134,12 @@ export default {
       //   title: "My art on Instagram",
       //   url: "https://www.instagram.com/gotta.lux/",
       // },
-      { divider: true },
-      {
-        icon: "coffee",
-        title: "Buy me a coffee",
-        url: "https://ko-fi.com/gottalux",
-      },
+      // { divider: true },
+      // {
+      //   icon: "coffee",
+      //   title: "Buy me a coffee",
+      //   url: "https://ko-fi.com/gottalux",
+      // },
       // { divider: true },
       // {
       //   icon: "collections",
