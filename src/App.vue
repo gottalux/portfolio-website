@@ -19,7 +19,7 @@
               >Dr. Adahlia S. Lux</v-list-item-title
             >
             <v-list-item-subtitle class="primary--text"
-              >supervised by
+              >Supervised by
               <a href="http://www.cs.bham.ac.uk/~axk/" target="_blank"
                 >Prof. Ata Kab&aacute;n
               </a></v-list-item-subtitle
