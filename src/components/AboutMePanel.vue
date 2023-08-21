@@ -25,7 +25,7 @@
           me. I came out as a trans woman in 2019.
           <br /><br />
 
-          I have recently submitted my PhD thesis. I am excited to find out what
+          I have recently defended my PhD thesis, successfully. I am excited to find out what
           the world has in store for the next chapter of my life.
         </p>
         <h3 class="secondary--text mt-3 mb-2">My hobbies</h3>

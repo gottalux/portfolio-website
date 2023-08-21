@@ -16,10 +16,10 @@
         <v-list-item three-line color="primary" dark>
           <v-list-item-content>
             <v-list-item-title style="font-size: 1.25rem"
-              >Adahlia S. Lux</v-list-item-title
+              >Dr. Adahlia S. Lux</v-list-item-title
             >
             <v-list-item-subtitle class="primary--text"
-              >PhD thesis submitted, supervised by
+              >PhD, supervised by
               <a href="http://www.cs.bham.ac.uk/~axk/" target="_blank"
                 >Prof. Ata Kab&aacute;n
               </a></v-list-item-subtitle
@@ -106,7 +106,7 @@ export default {
 
   metaInfo: {
     title: "Home Page",
-    titleTemplate: "%s - Adahlia Lux",
+    titleTemplate: "%s - Dr. Adahlia Lux",
   },
 
   data: () => ({

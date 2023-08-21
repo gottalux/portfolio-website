@@ -4,7 +4,7 @@
       <v-col cols="12">
         <h1 class="secondary--text my-3">Contact Details</h1>
         <p class="grey-darken-1--text">
-          Adahlia S. Lux<br />
+          Dr. Adahlia S. Lux<br />
           118, School of Computer Science<br />
           University of Birmingham <br />
           Edgbaston<br />
